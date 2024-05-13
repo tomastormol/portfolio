@@ -5,6 +5,7 @@ import './App.css'
 import { Home } from './components/Home'
 import ProjectCard from './components/ProjectCards'
 import pokedex from './assets/demo_pokedex.png'
+import SiteUnderDevelopment from './components/SiteUnderDevelopment'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,8 @@ function App() {
   return (
     <>
       <Home />
-      <ProjectCard title={"Test"} description={"Breve descripcion"} imageSrc={pokedex} githubLink={github} demoLink={demo} />
+      <SiteUnderDevelopment />
+      {/* <ProjectCard title={"Test"} description={"Breve descripcion"} imageSrc={pokedex} githubLink={github} demoLink={demo} /> */}
     </>
   )
 }
